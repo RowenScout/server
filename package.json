@@ -1,0 +1,46 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "jest --runInBand",
+    "test-watch": "jest --watch --runInBand",
+    "mongo-on": "mkdir -p ./db && mongod --dbpath ./db --smallfiles",
+    "mongo-off": "killall mongod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Task-Off/server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Task-Off/server/issues"
+  },
+  "homepage": "https://github.com/Task-Off/server#readme",
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "bcrypt": "^1.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "http-errors": "^1.6.2",
+    "jest": "^22.1.4",
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^5.0.2",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.14.11",
+    "socket.io": "^2.0.4",
+    "superagent": "^3.8.2"
+  }
+}
